@@ -95,7 +95,8 @@ h2 {
 ul li a {
     font-family: 'Concert One', cursive;
     font-size: 20px;
-    color: #d89a8d;
+    color: #b98277;
+    line-height: 1.5;
   
   }
 
@@ -117,22 +118,24 @@ footer p {
     text-align: center;
     display: block;
     font-family: 'Concert One', cursive;
-    font-size: 16px;
+    font-size: 18px;
+    color: #b98277;
     
 }
-
+footer a:link {
+    color: #b98277;
+}
   /*mouse over link*/
 a:hover{
     /**text-shadow: 2px 2px 2px white;**/
     background-color: white;
-    margin-left: 10px;
 }
 
-/*visted link*/
+/*visted link
 a:visited{
     color: #b98277;
     text-decoration: none;
-}
+} */
 
 /*unvisited link*/
 a:link{
