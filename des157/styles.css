@@ -133,11 +133,16 @@ a:hover{
     background-color: white;
 }
 
-/*visted link
+/*visted link*/
 a:visited{
     color: #b98277;
     text-decoration: none;
-} */
+} 
+
+footer a:visited{
+    color: #b98277;
+    text-decoration: none;
+} 
 
 /*unvisited link*/
 a:link{
