@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment: DOM</title>
+</head>
+<body>
+
+<script>
+
+    //Program will tell user whether the number they entered is odd or even
+    //If number is even, the numbers 1-10 will print in the console and the program will tell which number in that range is odd or even
+    //If number is odd, the numbers 11-20 will print in the console and the program will tell which number in that range is odd or even
+
+    
+
+        function oddEven() {
+            var oddEven= prompt("Please type in a whole number", "");
+
+            if(oddEven%2==0){
+                console.log("The number you entered is even.");
+
+                var numEven = ["2","14","66"]; // more examples of even numbers
+
+                for(var i=0; i<numEven.length;i++) {
+                    console.log(numEven[i]+ " is an example of an even number");
+                }
+
+                for(var i=0; i<11; i++){  //prints numbers 1-10 in console
+                    if (i%2===0){       //tells what number in range is even
+                        console.log(i+ " is an even number"); 
+                    }
+                    else{              //tells what number in range is odd
+                        console.log(i+ " is an odd number");
+                    }
+        
+                }
+            }
+
+            else if(oddEven%2==1){
+                console.log("The number you entered is odd.");
+
+                var numOdd = ["31","27","41"]; // more examples of odd numbers
+
+                for(var i=0; i<numOdd.length;i++) {
+                    console.log(numOdd[i]+ " is an example of an odd number");
+                }
+
+                for(var x=11; x<21; x++){       //prints numbers 11-20
+                    if (x%2===0){               //tells what number in range is even
+                        console.log(x+ " is an even number");
+                    }
+                    else{                       //tells what number in range is even
+                        console.log(x+ " is an odd number");
+                    }
+        
+                }
+            }
+
+            else{               //if a a letter is not entered, and error will appear
+                console.log("ERROR: You didn't enter a number!");
+            }
+        }
+
+        oddEven();
+        
+
+</script>
+
+</body>
+</html>
