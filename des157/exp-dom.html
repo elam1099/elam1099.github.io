@@ -7,13 +7,42 @@
 </head>
 <body>
     <h1>Experimentation: DOM</h1>
+        <p>1</p>
+        <p id="even">2</p>
+        <p>3</p>
+        <p id="even2">4</p>
+        <p>5</p>
+        <p id="even3">6</p>
+        <p>7</p>
+        <p id="even4">8</p>
+        <p>9</p>
+        <p id="even5">10</p>
+
+        <div>
+            <p class ="first">Even numbers are in a different color</p>
+        </div>
+
 <script>
 
     //Program will tell user whether the number they entered is odd or even
     //If number is even, the numbers 1-10 will print in the console and the program will tell which number in that range is odd or even
     //If number is odd, the numbers 11-20 will print in the console and the program will tell which number in that range is odd or even
 
-    
+       //DOM experimentation  
+        var boldP = document.querySelectorAll("p");
+            for(var i=0; i<boldP.length;i++){
+                boldP[i].style.fontWeight="bold";
+            } 
+
+            document.getElementById("even").style.color="red";
+            document.getElementById("even2").style.color="orange";
+            document.getElementById("even3").style.color="gold";
+            document.getElementById("even4").style.color="green";
+            document.getElementById("even5").style.color="blue";
+
+            document.querySelector(".first").style.fontSize="30px";
+            
+        //DOM experimentation - end
 
         function oddEven() {
             var oddEven= prompt("Please type in a whole number", "");
