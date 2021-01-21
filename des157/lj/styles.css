@@ -21,6 +21,7 @@ body {
 
 h1 {
     font-family: 'Playfair Display', serif;
+    font-weight: 900;
     font-size: 52px;
     color: #7c5040;
     text-shadow: 2px 2px 0px white;
@@ -30,16 +31,66 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 24px;
     text-shadow: 2px 2px 0px white;
 
+    background-color: #ddbea9;
+    border-radius: 20px;
+
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h3 {
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    font-size: 18px;
     text-align: center;
+    color: #7c5040;
 }
+
+p {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 1.25;
+
+    margin-bottom: 40px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button a {
+
+    background-color:#ddbea9 ;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7c5040;
+
+
+}
+
+.button a:link {
+    text-decoration: none;
+}
+
+.button a:hover{ 
+    color: #ddbea9;
+    transition: .5s ease;
+    background-color: #7c5040;
+}
+
 
 .container-a1 {
     max-width: 50%;
@@ -48,6 +99,43 @@ h3 {
 
     background-color: white;
     border-radius: 20px;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 10px 8px #eddcd2;
     
 }
+
+footer {
+    margin: auto;
+    background-color:#ddbea9;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 100px;
+
+  }
+
+  footer p {
+    text-align: center;
+    display: block;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #7c5040;
+    
+}
+
+footer a:hover{
+    background-color: white;
+}
+
+/*unvisited link*/
+footer a:link{
+    text-decoration: none;
+    color: #7c5040;
+    
+  }
+
+/*visited link*/
+footer a:visited{
+    color: #7c5040;
+    text-decoration: none;
+} 
