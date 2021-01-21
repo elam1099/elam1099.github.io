@@ -6,37 +6,30 @@ body {
     background: #f2e9e4;
 }
 
-
 .imageheader {
-    background-image: url("images/breakersceiling2.JPG");
+    height: 150px;
+    margin-top: -40px;
+    background-image: url("images/breakersceiling2.jpg");
     background-size: auto 150px;
+    background-repeat: repeat-x;
+
     position: relative;
-    text-align: center;
     color: white;
+
+    opacity: .85;
   }
 
-.heading {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-nav {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: white;
-    opacity: .85;
-}
-
-header img {
-    opacity: .75;
-}
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    color: #774936;
+    font-size: 52px;
+    color: #7c5040;
     text-shadow: 2px 2px 0px white;
     padding-left: 20px;
+   padding-top: 45px;
 
+}
+
+.container-a1 {
+    max-width: 50%;
+    margin:auto;
 }
