@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2e9e4;
+}
+
+
+.imageheader {
+    background-image: url("images/breakersceiling2.JPG");
+    background-size: auto 150px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.heading {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    opacity: .85;
+}
+
+header img {
+    opacity: .75;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #774936;
+    text-shadow: 2px 2px 0px white;
+    padding-left: 20px;
+
+}
