@@ -6,6 +6,7 @@ body {
     background: #f2e9e4;
 }
 
+
 .imageheader {
     height: 150px;
     margin-top: -40px;
@@ -35,12 +36,15 @@ h2 {
     font-weight: 700;
     font-size: 24px;
     text-shadow: 2px 2px 0px white;
+    line-height: 1.25;
 
     background-color: #ddbea9;
     border-radius: 20px;
 
     text-align: center;
     padding-top: 10px;
+    padding-left: 20px;
+    padding-right:20px;
     padding-bottom: 10px;
 }
 
@@ -92,7 +96,7 @@ p {
 }
 
 
-.container-a1 {
+section {
     max-width: 50%;
     margin:auto;
     margin-top: 50px;
@@ -113,7 +117,7 @@ footer {
 
   }
 
-  footer p {
+footer p {
     text-align: center;
     display: block;
     font-family: 'Montserrat', serif;
