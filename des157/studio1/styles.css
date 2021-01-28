@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+input, label{
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+}
