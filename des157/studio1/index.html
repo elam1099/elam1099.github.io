@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="styles.css">
@@ -15,44 +16,52 @@
 
 <body>
 
-  
+    
+    <div id="container">
 
     <main>
-        
-       
-        <img src="images/placeholder.jpeg" width= "200px">
+      
+        <div class ="content">
 
+       <section>
+        <img src="images/placeholder.jpeg" width= "200px">
+        </section>
+
+        <section>
         <form id="myform">
-            <label for ="noun1"> Provide a proper noun</label>
+            <label for ="noun1"> Proper noun</label>
             <input type="text" id="noun1">
 
-            <label for ="noun2"> Provide an adjective</label>
-            <input type="text" id="noun2">
+            <label for ="adj">Adjective</label>
+            <input type="text" id="adj">
             
-            <label for ="adj1"> Provide a color</label>
-            <input type="text" id="adj1">
+            <label for ="color"> Color</label>
+            <input type="text" id="color">
 
-            <label for ="verb1"> Provide a verb</label>
+            <label for ="verb1"> Verb</label>
             <input type="text" id="verb1">
 
-            <label for ="verb2"> Provide another verb</label>
-            <input type="text" id="verb2">
+            <label for ="noun2"> Noun</label>
+            <input type="text" id="noun2">
 
-            <label for ="pluraln"> Provide a plural noun</label>
+            <label for ="pluraln"> Plural noun</label>
             <input type="text" id="pluraln">
 
-            <label for ="name"> Provide your name</label>
+            <label for ="name"> Name</label>
             <input type="text" id="name">
 
-            <input type="submit" value="Send">
+            <input type="submit" value="Create my letter">
+           <!--  <input type="image" src="images/button.svg"> -->
         </form>
+          </section>
+       
+         </div>
 
         <article id= "madlib"></article>
-
-       
- 
+   
     </main>
 
+    </div>  
    
     
     
