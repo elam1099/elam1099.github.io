@@ -21,8 +21,17 @@
 
         //error if user does not complete entire form
         if (noun1 && adj && color && verb1 && noun2 && pluraln && name) {
-            myText= `Dear ${noun1},\n\
-            There’s something I must tell you, but I’m not sure how to say it. I think you’re a very ${adj} person, and I can’t stop thinking about you. I love the way your ${color} eyes shine under the sun, and the way you ${verb1} when you talk.  I can honestly listen to you talk about ${noun2} for hours. Whenever I see you, I get ${pluraln} in my stomach, and my hands start to shake. I’ve never felt this way for anyone before. I’m dying to know how you feel about me. \n\
+            myText = `Dear ${noun1},\n` +                                     
+            `There’s something I must tell you, 
+            but I’m not sure how to say it. 
+            I think you’re a very ${adj} person, 
+            and I can’t stop thinking about you. 
+            I love the way your ${color} eyes shine under the sun, 
+            and the way you ${verb1} when you talk. 
+             I can honestly listen to you talk about ${noun2} for hours. 
+             Whenever I see you, I get ${pluraln} in my stomach, and my
+              hands start to shake. I’ve never felt this way for anyone 
+              before. I’m dying to know how you feel about me. \n\
 
             So will you be my Valentine? \n\
 
@@ -48,15 +57,14 @@
       
     });
 
-     document.querySelector(".open").addEventListener('click', function(event){
+    document.querySelector(".open").addEventListener('click', function(event){
         event.preventDefault();
         document.getElementById('overlay').className= "showing";
     });
-    
+        
     document.querySelector('.close').addEventListener('click', function(event){
         event.preventDefault();
         document.getElementById('overlay').className= "hidden";
     });
- 
 
 }());
