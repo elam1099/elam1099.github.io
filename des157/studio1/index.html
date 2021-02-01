@@ -23,11 +23,18 @@
       
         <div class ="content">
 
-       <section>
+        <section>
         <img src="images/placeholder.jpeg" width= "200px">
         </section>
 
+        <section id="overlay" class="hidden">
+         <article id= "madlib">
+         </article>
+              <button class="close">close</button>
+        </section>
+
         <section>
+
         <form id="myform">
             <label for ="noun1"> Proper noun</label>
             <input type="text" id="noun1">
@@ -50,15 +57,21 @@
             <label for ="name"> Name</label>
             <input type="text" id="name">
 
-            <input type="submit" value="Create my letter">
-           <!--  <input type="image" src="images/button.svg"> -->
+       
+           <input type="submit" value="Create my letter">
+        
+           <p>Click <a href="#" class="open">here</a> to open the overlay</p>
+            
+        
         </form>
-          </section>
+        
+        </section>
        
          </div>
 
-        <article id= "madlib"></article>
-   
+       
+        
+       
     </main>
 
     </div>  

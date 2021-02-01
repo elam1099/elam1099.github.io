@@ -45,14 +45,18 @@
             eachField.value="";
         }
 
-       // document.write("Dear" + noun1 + "There’s something I must tell you, but I’m not sure how to say it. I think you’re a very" );
-
-
       
     });
 
-
-
+     document.querySelector(".open").addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('overlay').className= "showing";
+    });
+    
+    document.querySelector('.close').addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('overlay').className= "hidden";
+    });
  
 
 }());
