@@ -92,6 +92,7 @@ p {
     color: #ddbea9;
     transition: .5s ease;
     background-color: #7c5040;
+    box-shadow: #ddbea9 4px 3px;
 }
 
 
