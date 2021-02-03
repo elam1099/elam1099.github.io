@@ -65,12 +65,16 @@ p {
     margin-bottom: 40px;
 }
 
-.button {
+.button, .button2 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.button a {
+.button2 {
+    margin-top: 40px;
+}
+
+.button a, .button2 a {
 
     background-color:#ddbea9 ;
     padding: 10px 15px 10px 15px;
@@ -84,11 +88,11 @@ p {
 
 }
 
-.button a:link {
+.button a:link, .button2 a:link {
     text-decoration: none;
 }
 
-.button a:hover{ 
+.button a:hover, .button2 a:hover{ 
     color: #ddbea9;
     transition: .5s ease;
     background-color: #7c5040;
