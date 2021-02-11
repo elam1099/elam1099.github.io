@@ -112,6 +112,12 @@ section {
     
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
     margin: auto;
     background-color:#ddbea9;

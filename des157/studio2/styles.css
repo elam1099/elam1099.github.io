@@ -1,0 +1,18 @@
+section img {
+    /* border-style: solid; */
+    border-radius: 100px;
+    border-width: 2px;
+    background-color: lightblue;
+}
+
+section {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* section.light {
+   
+} */
