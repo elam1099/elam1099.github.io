@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Every Picture Studio</title>
 
@@ -13,66 +15,97 @@
 </head>
 
 <body>
-    <h1> My Skincare Tour</h1>
 
+    <nav>
+       
+        <ul>
+            <li><h1> my skincare tour.</h1></li>
+            <li><a href= "#morning"> morning</a></li>
+            <li><a href="#night">night.</a></li>
+            <li><a href="#between">misc.</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <body class= "light">
     <div class="top section">
-        <img src = "images/breakers.JPG" width=400 alt="ceiling of breakers mansion">
-        <img src = "images/morning.jpg" width=400 alt="ceiling of breakers mansion">
-        <img src = "images/morning2.jpg" width=400 alt="ceiling of breakers mansion">
-        <h2>Good morning.</h2>
+        <img src = "images/morning.jpg" width=650 alt="silhoutte">
+
+        <div class="gm">
+            <h2>good <br>morning.</h2>
+            <p> For me, my skincare routine is a sign of peace, both in the morning and in the evening. In the morning, it wakes me up and prepares my skin for the day, signifying a time of peace and comfort before taking on my days.</p>
+
+        </div>
+
     </div>
 
-    <section class="light">
-        <img src = "images/matcha.png" width= 200 alt= "bottle of cleanser">
-        <img src="images/vitac.png" width =200 alt="vitamin c serum">
-        <img src="images/gbr.png" width =200 alt="bottle of serum">
-        <img src="images/missha.png" width =200 alt="sunscreen">
-    </section>
+    <h3> my morning products. </h3>
+    <section id="morning">
 
+        <div class="morning image">
+        <img id="matcha" src = "images/matcha.png" width= 200 alt= "bottle of cleanser">
+        <img id="vitac" src="images/vitac.png" width =200 alt="vitamin c serum">
+        <img id="gbr" src="images/gbr.png" width =200 alt="bottle of serum">
+        <img id = "missha" src="images/missha.png" width =200 alt="sunscreen">
+        </div>
+
+    </section>
+    </body> 
+
+    <body class = "dark">
+    
     <div class="middle section">
         <img src = "images/timesquare.png" width=400 alt="times square at night">
-        <h2>Good night.</h2>
     </div>
 
-    <section class="dark">
-        <img src = "images/kale.png" width= 200 alt= "bottle of toner">
+    <h3>Good night.</h3>
+    <section id="night">
+        <div class="night image">
+        <img id="kale" src = "images/kale.png" width= 200 alt= "bottle of toner">
         <img src="images/vitc.png" width =200 alt="vitamin c powder in bottle">
         <img src="images/toner.png" width =200 alt="bottle of serum">
         <img src="images/centella.png" width =200 alt="bottom of serum">
+        </div>
         
     </section>
 
-    <section class="dark2">
+    <section class="night2">
+        <div class="night2 image">
         <img src = "images/snail.png" width= 200 alt= "bottle of serum">
         <img src = "images/peach.png" width= 200 alt= "bottle of serum">
         <img src = "images/blume.png" width= 200 alt= "bottle of serum">
         <img src = "images/laneigemask.png" width= 200 alt= "bottle of lotion">
-        
+        </div>
+
     </section>
 
-    <section class="dark3">
+    <section class="night3">
+        <div class="night3 image">
         <img src = "images/tret.png" width= 200 alt= "tube of lotion">
         <img src = "images/laniegelip.png" width= 200 alt= "small bottle of lip mask"> 
+        </div>
     </section>
+    </body>     
 
+    <body class = "green">
     <div class="bottom section">
         <h2>And everthing in between.</h2>
     </div>
 
-    <section class="between1">
+    <section id="between">
         <img src = "images/oil.png" width= 200 alt= "bottle of oil cleanser">
         <img src = "images/aha.png" width= 200 alt= "bottle of serum">
         <img src = "images/innisfree.png" width= 200 alt= "bottle of serum">
         <img src = "images/pore.png" width= 200 alt= "bottle of face mask">
-        <img src = "images/honey.png" width= 200 alt= "bottle of face mask">
     </section>
 
     <section class="between2">
         <img src = "images/cetaphil.png" width= 200 alt= "bottle of cleanser">
+        <img src = "images/honey.png" width= 200 alt= "bottle of face mask">
         <img src = "images/klog.png" width= 200 alt= "sheet mask">
-        <img src = "images/snailbee.png" width= 200 alt= "sheet mask">
         <img src = "images/patch.png" width= 200 alt= "sheet mask">
     </section>
+    </body>
     
     
 </body>

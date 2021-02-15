@@ -1,18 +1,125 @@
+nav ul {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+
+    font-family: 'Bodoni Moda', serif;
+
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: block;
+    padding-right: 140px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: 100;
+  
+  }
+
+
 section img {
     /* border-style: solid; */
     border-radius: 100px;
     border-width: 2px;
     background-color: lightblue;
+    justify-content: space-between;
 }
 
 section {
     margin: auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
+    width: 80%; 
+    
+} 
 
+h1 {
+    font-size: 40px;
+    padding-right: 300px;
+    padding-left: 40px;
 }
 
-/* section.light {
-   
-} */
+h1, h2{
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+
+.gm h2 {
+    position: absolute;
+    top: 120px;
+    left: 560px;
+    font-size: 120px;
+    color: white;
+    line-height: .95;
+}
+
+body {
+    height: 2500px;
+}
+body.light {
+    background-color: #EBD6C6;
+    transition: all 2s;
+}
+
+body.dark {
+    background-color:#244169;
+    transition: all 2s;
+}
+
+body.green {
+    background-color:#A4C3B2    ;
+    transition: all 2s;
+}
+
+.top section img {
+    position: relative;
+    
+}
+
+.gm p {
+    position: absolute;
+    top: 500px;
+    left: 700px;
+    font-family: "Karla", serif;
+    font-size: 20px;
+    width: 40%;
+    color: white;
+}
+
+#morning {
+    margin-top: -50px;
+}
+
+.morning.image, .night.image, .night2.image {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.night3.image {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+/* hover animations for morning products
+ */
+#matcha:hover, #vitac:hover, #gbr:hover, #missha:hover {
+    transform: scale(1.1);
+    transition: .6s;
+}
+
