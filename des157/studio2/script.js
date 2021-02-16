@@ -13,8 +13,8 @@
 
         switch(true) {
             case page < 1400: body.className="light"; break;
-            case page < 3200: body.className="dark"; break;
-            case page < 3201: body.className="green"; break;
+            case page < 3700: body.className="dark"; break;
+            case page < 3800: body.className="green"; break;
 
             default: body.className="green";
         }

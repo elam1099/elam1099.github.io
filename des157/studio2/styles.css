@@ -26,6 +26,7 @@ nav ul {
     padding-left: 0px;
 
     font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
 
   }
   
@@ -50,7 +51,7 @@ nav ul {
   }
 
 
-
+/*image styles*/
 section img {
     border-radius: 100px;
     border-width: 2px;
@@ -65,17 +66,17 @@ section img {
 
 .morning.image img {
     background-color: #DCB494;
-    box-shadow: #9c6644 5px 5px;
+    box-shadow: #9c6644 5px 5px 5px;
 }
 
 .night.image img, .night2.image img, .night3.image img {
     background-color: #355F9A;
-    box-shadow: #162841 5px 5px;
+    box-shadow: #101e31 5px 5px 5px;
 }
 
 .misc1 img, .misc2 img {
     background-color: #7C9D8B;
-    box-shadow: #546d5f 5px 5px;
+    box-shadow: #546d5f 5px 5px 5px;
 }
 
 section {
@@ -172,7 +173,7 @@ h3 {
     
 }
 
-.morning.text, .night.text{
+.morning.text, .night.text, .between.text{
     display: flex;
     justify-content: space-between;
     width: 83%;
@@ -187,7 +188,7 @@ h3 {
 
 }
 
-.morning.text p , .night.text p{
+.morning.text p , .night.text p, .between.text p{
     width: 20%;
     margin-top: 30px;
     font-family: "Karla", sans-serif;
@@ -199,6 +200,14 @@ h3 {
 
 }
 
+.morning.text p {
+    box-shadow:  #9c6644 3px 3px 5px;
+}
+
+.night.text p {
+    box-shadow: #101e31 3px 3px 5px;
+}
+
 .night.text2 p {
     width: 40%;
     margin-top: 30px;
@@ -208,7 +217,12 @@ h3 {
     background-color: white;
     padding: 15px;
     border-radius: 20px;
+    box-shadow: #101e31 3px 3px 5px;
 
+}
+
+.between.text p {
+    box-shadow: #546d5f 3px 3px 5px;
 }
 
 
