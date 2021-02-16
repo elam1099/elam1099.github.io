@@ -17,12 +17,6 @@ body.green {
     transition: all 2s;
 }
 
-.top section img {
-    position: relative;
-    
-}
-
-
 /* nav bar */
 
 nav ul {
@@ -47,12 +41,27 @@ nav ul {
   
   }
 
+  nav ul li a:visited {
+    color: black;
+  }
+
+  nav ul li a:link {
+    color: black;
+  }
+
+
 
 section img {
     border-radius: 100px;
     border-width: 2px;
     justify-content: space-between;
 }
+
+.top section img {
+    position: relative;
+    
+}
+
 
 .morning.image img {
     background-color: #DCB494;
@@ -92,7 +101,15 @@ h3 {
     font-size: 36px;
     margin-top: 100px;
     margin-left: 140px;
+
 }
+
+#nightHeader h3 {
+    margin-top: 850px;
+    color: white;
+}
+
+
 
 .gm h2 {
     position: absolute;
@@ -105,8 +122,8 @@ h3 {
 
 .gn h2 {
     position:absolute;
-    top: 1350px;
-    left: 150px;
+    top: 1500px;
+    left: 200px;
     font-size: 120px;
     color: white;
     line-height: .95;
@@ -117,29 +134,35 @@ h3 {
     top: 500px;
     left: 700px;
     font-family: "Karla", serif;
-    font-size: 20px;
+    font-size: 24px;
     width: 40%;
     color: white;
+    line-height: 1.25;
 }
 
 .gn p {
     position: absolute;
-    top: 1600px;
-    left: 150px;
+    top: 1750px;
+    left: 200px;
     font-family: "Karla", serif;
-    font-size: 20px;
-    width: 40%;
+    font-size: 24px;
+    width: 35%;
     color: white;
+   
+    line-height: 1.25;
 }
 
-#morning {
+#morning , #night, #between {
     margin-top: -50px;
 }
+
 
 .middle.section img{
     float: right;
     position: relative;
+    margin-top: 100px;
 }
+
 
 .morning.image, .night.image, .night2.image, .misc1, .misc2 {
     margin-top: 80px;
@@ -148,6 +171,46 @@ h3 {
     width: 100%;
     
 }
+
+.morning.text, .night.text{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin: auto;
+}
+
+.night.text2 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+
+}
+
+.morning.text p , .night.text p{
+    width: 20%;
+    margin-top: 30px;
+    font-family: "Karla", sans-serif;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
+.night.text2 p {
+    width: 40%;
+    margin-top: 30px;
+    font-family: "Karla", sans-serif;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
 
 .night3.image {
     display: flex;
@@ -172,4 +235,3 @@ h3 {
     transform: scale(1.1);
     transition: .6s;
  }
-
