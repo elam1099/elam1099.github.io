@@ -2,6 +2,49 @@
     'use strict';
     console.log("reading js");
 
+    //zoom for morning img
+    const divClass = document.querySelector('.top.section, .middle.section');
+    const mainImg = document.querySelector('.top.section img, .middle.section img');
+    const percent = divClass.offsetWidth / 100;
+    let prevLoc = 0;
+
+    //listens to when mouse is over the img
+    divClass.addEventListener('mousemove', reportPos);
+
+    function reportPos(event) {
+        // % zoom as mouse moves from left to right
+        const mouseOver = Math.ceil((event.clientX - (divClass.getBoundingClientRect().left)) / percent);
+    
+        if (prevLoc !== mouseOver) {
+            // add 5px to width of img
+            let zoomPic = mouseOver * 5;
+            // at 0% zoom, img is at 650 px
+            mainImg.style.width = (650 + zoomPic) + 'px';
+            prevLoc = mouseOver;
+        }
+    }
+    
+    //zoom for night img
+    const divClass2 = document.querySelector('.middle.section');
+    const mainImg2 = document.querySelector('.middle.section img');
+    const percent2 = divClass2.offsetWidth / 100;
+    let prevLoc2 = 0;
+
+    //listens to when mouse is over the img
+    divClass2.addEventListener('mousemove', reportPos2);
+
+    function reportPos2(event) {
+        // % zoom as mouse moves from right to left
+        const mouseOver2 = Math.ceil((( divClass2.getBoundingClientRect().right) - event.clientX) / percent2);
+    
+        if (prevLoc2 !== mouseOver2) {
+            // add 5px to width of img
+            let zoomPic2 = mouseOver2 * 5;
+            // at 0% zoom, img is at 650 px
+            mainImg2.style.width = (650 + zoomPic2) + 'px';
+            prevLoc2 = mouseOver2;
+        }
+    }
 
 
     //bg changes color based on the section of the page
@@ -12,9 +55,9 @@
         page = window.pageYOffset;
 
         switch(true) {
-            case page < 1400: body.className="light"; break;
-            case page < 3700: body.className="dark"; break;
-            case page < 3800: body.className="green"; break;
+            case page < 1400: body.className="light"; break; //bg color is beige
+            case page < 3700: body.className="dark"; break; //bg color is dark navy
+            case page < 3800: body.className="green"; break; //bg color is sage green
 
             default: body.className="green";
         }
