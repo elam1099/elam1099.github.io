@@ -3,8 +3,8 @@
     console.log("reading js");
 
     //zoom for morning img
-    const divClass = document.querySelector('.top.section, .middle.section');
-    const mainImg = document.querySelector('.top.section img, .middle.section img');
+    const divClass = document.querySelector('.top.section');
+    const mainImg = document.querySelector('.top.section img');
     const percent = divClass.offsetWidth / 100;
     let prevLoc = 0;
 
