@@ -24,7 +24,7 @@ main {
 
 div {
     padding: 20px;
-} 
+}  
 
 #game {
     background-color:#eaeaea;
@@ -40,9 +40,19 @@ div {
 
 }
 
-/* #actions {
-    background-color: silver;
-} */
+#actions {
+    padding: 0;
+    margin-top: 35px;
+}   
+
+.bg {
+    background-color: white;
+    border: 25px solid transparent;
+    border-image: url(images/borderpurple.svg) 100 stretch;
+    background-color: white;
+    border-radius: 47px;
+    
+}
 
 /*fonts*/
 @font-face {
@@ -116,6 +126,7 @@ h2 {
     border-image: url(images/border.svg) 100 stretch;
     background-color: white;
     border-radius: 47px;
+
 }
 
 #gamecontainer {
@@ -123,6 +134,7 @@ h2 {
     border-image: url(images/borderpink.svg) 100 stretch;
     background-color: white;
     border-radius: 47px;
+
 }
 
 
@@ -148,9 +160,30 @@ h2 {
     top: 30px;
 }
 
-#startgame { 
-    padding: 10px;
-  
+#startgame, button#roll { 
+    padding: 5px 12px 5px 12px;
+    border: 10px solid transparent;
+    border-image: url(images/bordergreen.svg) 80 stretch;
+    background-color: white;
+    border-radius: 22px;
+    background: linear-gradient(#B5E8C9, #D8F8E4);
+    cursor: pointer;
+}
+
+button#quit {
+    padding: 5px 12px 5px 12px;
+    border: 10px solid transparent;
+    border-image: url(images/borderred.svg) 80 stretch;
+    background-color: white;
+    border-radius: 22px;
+    background: linear-gradient(#F58989, #FFCACA);
+    cursor: pointer;
+}
+
+button#startgame, button#roll, button#quit{
+    font-family: "Press Start 2p", serif;
+    text-align: center;
+    color: black;
 }
 
 #roll {
@@ -159,3 +192,30 @@ h2 {
     align-items: center;
 
 }
+
+/*action items*/
+#rollask {
+    font-family: "Press Start 2p", serif;
+    font-size: 22px;
+    padding: 0;
+}
+
+ #actionbtn {
+     padding: 0;
+     position: relative;
+ }
+
+ #passbtn {
+     position: absolute;
+     right: 100px;
+     padding: 0;
+     bottom: 0;
+ }
+
+#againbtn {
+     position: absolute;
+     padding:0;
+     right: 200px;
+     bottom: 0;
+ } 
+ 

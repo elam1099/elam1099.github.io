@@ -8,6 +8,7 @@ console.log("reading js");
     var gameControl = document.getElementById('gamecontrol');
     var game = document.getElementById('game');
     var score = document.getElementById('score');
+    var roll = document.getElementById('roll');
     var actionArea = document.getElementById('actions');
 
 
@@ -26,7 +27,7 @@ console.log("reading js");
         //randomly set game index
         gameData.index = Math.round(Math.random());
         //gameControl.innerHTML = '<h2 id="gamestarted">GAME HAS STARTED</h2>';
-        gameControl.innerHTML = '<button id="quit">Wanna quit?</button>';
+        gameControl.innerHTML = '<div class="buttonquit"><button id="quit">QUIT</button></div>';
 
         //button to quit game and reload page
         document.getElementById("quit").addEventListener("click", function (){
@@ -42,7 +43,7 @@ console.log("reading js");
 
     function setUpTurn(){
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
-        actionArea.innerHTML = '<div class="buttonroll"><button id="roll">Roll the dice</button></div>';
+        roll.innerHTML = '<div class="buttonroll"><button id="roll">ROLL THE DICE</button></div>';
         document.getElementById('roll').addEventListener('click', function(){
 
             throwDice();
@@ -50,7 +51,7 @@ console.log("reading js");
     };
 
     function throwDice(){
-        actionArea.innerHTML = '';
+        roll.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random()*6) + 1;
         gameData.roll2 = Math.floor(Math.random()*6) + 1;
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
@@ -85,7 +86,9 @@ console.log("reading js");
         // if neither die is a 1
         else {
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
+            //actionArea.innerHTML = 'ROLL AGAIN?';
             actionArea.innerHTML = '<button id="rollagain">Roll Again</button> or <button id="pass">Pass</button>';
+            //actionArea.innerHTML = '<div class="bg"><div id="rollask">ROLL AGAIN?</div> <div id="actionbtn"> <div id="passbtn"><button id="pass">Pass</button></div>  <div id="againbtn"><button id="rollagain">Roll Again</button></div></div>';
 
             document.getElementById('rollagain').addEventListener('click', function(){
                 //setUpTurn();
