@@ -1,0 +1,161 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: black;
+}
+
+/*containers*/
+
+main {
+    width: 75%;
+    margin: auto;
+}
+
+#instructions {
+    margin-top: 20px;
+}
+
+#gamecontainer {
+    background-color: white;
+    height: 300px;
+}
+
+div {
+    padding: 20px;
+} 
+
+#game {
+    background-color:#eaeaea;
+   
+}
+
+#gamecontrol, #score {
+    background-color: aliceblue;
+}
+
+#gamecontrol {
+    position: relative;
+
+}
+
+/* #actions {
+    background-color: silver;
+} */
+
+/*fonts*/
+@font-face {
+    font-family: Header;
+    src: url(04B_30__.TTF);
+}
+
+@font-face {
+    font-family: RainyHearts, serif;
+    src: url(rainyhearts.ttf);
+}  
+
+/*headers*/
+
+h1 {
+    font-family: Header, serif;
+    text-align: center;
+    font-size: 60px;
+    color: #F08080;
+    text-shadow: 2px 2px white;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #CAFFBF;
+    font-family: "Press Start 2P", serif;
+}
+
+#pink {
+    color:#F08080;
+}
+
+#gamecontrol h2 {
+    color:black;
+    margin-top: 10px;
+}
+
+#gamestarted {
+    font-size: 16px;
+}
+
+/*text*/
+
+#instructions p {
+    font-family: RainyHearts;
+    font-size: 22px;
+}
+
+#gamecontrol p {
+    font-family: "Press Start 2p", serif;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+#game p {
+    font-family: "Press Start 2p", serif;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+
+}
+
+/*borders*/
+
+.bordergreen {
+    border: 25px solid transparent;
+    border-image: url(images/border.svg) 100 stretch;
+    background-color: white;
+    border-radius: 47px;
+}
+
+#gamecontainer {
+    border: 25px solid transparent;
+    border-image: url(images/borderpink.svg) 100 stretch;
+    background-color: white;
+    border-radius: 47px;
+}
+
+
+/*button*/
+
+.buttonstart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+.buttonroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quit {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+#startgame { 
+    padding: 10px;
+  
+}
+
+#roll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
