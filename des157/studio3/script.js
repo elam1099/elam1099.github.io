@@ -16,7 +16,7 @@ console.log("reading js");
     const dingSound = new Audio('media/ding.wav');
     const beepSound = new Audio('media/beep.wav');
     const winSound = new Audio('media/win.wav');
-    const diceSound = new Audio('media/Diceroll.m4a');
+    const diceSound = new Audio('media/diceroll.m4a');
 
 
     var gameData = {
