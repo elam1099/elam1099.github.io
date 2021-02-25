@@ -6,6 +6,28 @@ body {
     background-color: black;
 }
 
+    
+#header {
+    display: flex;
+    /* margin: auto; */
+    /* width: 80%; */
+    justify-content: center;
+    align-items: center;
+}
+
+#header img {
+    padding: 30px;
+
+    animation: pigbounce 0.5s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes pigbounce{ 
+    from { transform: translate3d(0, -10px, 0);} 
+    to { transform: translate3d(0, 10px, 0);} 
+} 
+
 /*containers*/
 
 #instructions {
