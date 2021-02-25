@@ -8,18 +8,11 @@ body {
 
 /*containers*/
 
-main {
-    width: 75%;
-    margin: auto;
-}
-
 #instructions {
-    margin-top: 20px;
-}
-
-#gamecontainer {
-    background-color: white;
-    height: 300px;
+    margin-top: 100px;
+    padding: 0;
+    width: 70%;
+    margin: auto;
 }
 
 div {
@@ -27,16 +20,18 @@ div {
 }  
 
 #game {
-    background-color:#eaeaea;
+    padding: 0;
    
 }
 
-#gamecontrol, #score {
-    background-color: aliceblue;
+#gamearea {
+    width: 90%;
+    margin: auto;
 }
 
 #gamecontrol {
     position: relative;
+    padding:10px;
 
 }
 
@@ -52,6 +47,29 @@ div {
     background-color: white;
     border-radius: 47px;
     
+}
+
+#dicearea {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#rolldice {
+    margin-top: 30px;
+}
+
+#scorecontainer {
+    float: right;
+    width: 22%;
+    margin-top: 150px;
+}
+
+#gameonly {
+    width:65%;
 }
 
 /*fonts*/
@@ -80,6 +98,8 @@ h2 {
     text-align: center;
     color: #CAFFBF;
     font-family: "Press Start 2P", serif;
+    margin-top: 100px;
+
 }
 
 #pink {
@@ -119,6 +139,46 @@ h2 {
 
 }
 
+.pdesign {
+    background-color: white;
+    color: black;
+}
+
+#scorecontainer p {
+    font-family: "Press Start 2P";
+    text-align: center;
+    font-size: 20px;
+    color: #F08080;
+}
+
+.scorenum {
+    font-size: 24px;
+}
+
+.players {
+    background-color: black;
+    color: white;
+}
+
+#win {
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+#win h2 {
+    color:#ffbe0b;
+    line-height: 1.5;
+}
+
+#sorry {
+    width: 70%;
+    margin: auto;
+    font-family: "Press Start 2P";
+    text-align: center;
+    font-size: 14px;
+
+}
 /*borders*/
 
 .bordergreen {
@@ -132,10 +192,15 @@ h2 {
 #gamecontainer {
     border: 25px solid transparent;
     border-image: url(images/borderpink.svg) 100 stretch;
-    background-color: white;
+    background-color: #fde3e3;
     border-radius: 47px;
+    height: 370px;
 
 }
+
+ #scoreboard, #score {
+    padding: 0;
+} 
 
 
 /*button*/
@@ -156,8 +221,8 @@ h2 {
 
 #quit {
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 10px;
+    top: 10px;
 }
 
 #startgame, button#roll { 
@@ -171,7 +236,7 @@ h2 {
 }
 
 button#quit {
-    padding: 5px 12px 5px 12px;
+    padding: 3px 10px 3px 10px;
     border: 10px solid transparent;
     border-image: url(images/borderred.svg) 80 stretch;
     background-color: white;
@@ -203,11 +268,13 @@ button#startgame, button#roll, button#quit{
  #actionbtn {
      padding: 0;
      position: relative;
+     font-size: 20px;
  }
+
 
  #passbtn {
      position: absolute;
-     right: 100px;
+     right: 20px;
      padding: 0;
      bottom: 0;
  }
@@ -215,7 +282,70 @@ button#startgame, button#roll, button#quit{
 #againbtn {
      position: absolute;
      padding:0;
-     right: 200px;
+     right: 120px;
      bottom: 0;
  } 
- 
+
+ #rollagain:hover, #pass:hover {
+     cursor: pointer;
+ }
+
+ button#pass, button#rollagain {
+    border: none;
+    background: none;
+    font-family: 'Press Start 2P', serif;
+}
+
+#againbtn img, #passbtn img {
+    display: none;
+}
+
+#againbtn:hover img {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 3px;
+    margin-right: 18px;
+
+    animation: blink 1s infinite;
+}
+#passbtn:hover img {
+    display:block;
+    position: absolute;
+    right: 50px;
+    bottom: 3px;
+
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  } 
+
+
+
+/*scoreboard */
+#p1 {
+    padding: 0;
+    text-align: center;
+    font-family: "Press Start 2P";
+    border: 25px solid transparent;
+    border-image: url(images/scorered.svg) 100 stretch;
+    background-color: white;
+    height: 80px;
+    border-radius: 45px;
+
+    margin-bottom: 20px;
+}
+
+#p2 {
+    padding: 0;
+    text-align: center;
+    font-family: "Press Start 2P";
+    border: 25px solid transparent;
+    border-image: url(images/scoreblue.svg) 100 stretch;
+    background-color: white;
+    height: 80px;
+    border-radius: 45px;
+}

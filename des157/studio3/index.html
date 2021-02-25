@@ -22,7 +22,7 @@
     
     <div id="instructions">
 
-    <h2>GAME RULES</h2>
+     <h2>GAME RULES</h2>
 
         <div class="bordergreen">
         <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
@@ -31,30 +31,41 @@
 
     </div>
 
-    <h2 id="pink">GAME START!</h2>
+    
 
-    <section id="gamecontainer">
-        <div id="gamecontrol">
-            <p>GAME WILL RANDOMLY CHOOSE A PLAYER. CLICK START TO PLAY.</p>
-            <div class="buttonstart"><button id="startgame">START</button></div>
+    <div id="gamearea">
+        
+
+        <section id="scorecontainer">
+            <p> SCORE </p>
+
+            <div id="score"></div>
+        </section>
+
+        <div id="gameonly">
+            <h2 id="pink">GAME START!</h2>
+            <section id="gamecontainer">
+                <div id="gamecontrol">
+                    <p>GAME WILL RANDOMLY CHOOSE A PLAYER. CLICK START TO PLAY.</p>
+                    <div class="buttonstart"><button id="startgame">START</button></div>
+                </div>
+
+                <div id="game">
+                </div>
+
+                <div id ="rolldice"></div>
+                
+
+            </section>
+
+            <section id="actionbox">
+                <div id="actions"></div>
+            </section>
         </div>
 
-        <div id="game">
-        </div>
+    </div>  
 
-        <div id ="roll"></div>
-
-    </section>
-
-    <section id="actionbox">
-        
-        <div id="actions"></div>
-        
-    </section>
-
-    <section id="scorecontainer">
-        <div id="score"></div>
-    </section>
+ 
 
     </main>
 
