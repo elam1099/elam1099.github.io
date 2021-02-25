@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Recoleta;
+    src: url(Recoleta-Black.ttf);
+}
+
+body {
+    background: #f2e9e4;
+}
+
+section {
+
+    margin:auto;
+    margin-top: 40px;
+
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 10px 8px  #eddcd2;
+    
+}
+
+#grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 40px;
+}
+
+#rightcontent {
+    width: 95%;
+}
+
+
+h1 {
+    font-family: Recoleta, serif;
+    color: #7f5539;
+    text-align: center;
+    font-size: 86px;
+    text-shadow: 4px 2px #b08968, 7px 6px #ddb892;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: #7f5539;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/*buttons styles*/
+
+.button {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+
+.button a {
+
+    background-color:#ddbea9 ;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7c5040;
+
+
+}
+
+.button a:link {
+    text-decoration: none;
+}
+
+.button a:hover { 
+    color: #ddbea9;
+    transition: .5s ease;
+    background-color: #7c5040;
+    box-shadow: #ddbea9 4px 3px;
+}
