@@ -11,6 +11,13 @@ console.log("reading js");
     var actionArea = document.getElementById('actions');
     var rolldice = document.getElementById('rolldice');
 
+    
+   //sounds
+    const dingSound = new Audio('media/ding.wav');
+    const beepSound = new Audio('media/beep.wav');
+    const winSound = new Audio('media/win.wav');
+    const diceSound = new Audio('media/Diceroll.m4a');
+
 
     var gameData = {
         dice: ['1die.svg', '2die.svg', '3die.svg', '4die.svg', '5die.svg', '6die.svg'],
@@ -31,8 +38,16 @@ console.log("reading js");
 
         //button to quit game and reload page
         document.getElementById("quit").addEventListener("click", function (){
+
             location.reload();
+
+            //sound plays
+            beepSound.play();
+            
         });
+
+        //sound plays
+        dingSound.play();
 
         //console.log("set up the turn!");
         console.log(gameData.index);
@@ -46,6 +61,8 @@ console.log("reading js");
         actionArea.innerHTML = '';
         rolldice.innerHTML = '<div class="buttonroll"><button id="roll">ROLL THE DICE</button></div>';
         document.getElementById('roll').addEventListener('click', function(){
+            //sound plays
+            diceSound.play();
 
             throwDice();
         });
@@ -80,7 +97,7 @@ console.log("reading js");
             gameData.index ? (gameData.index = 0) : (gameData.index=1);
             game.innerHTML += `<p><div id="sorry">Oops! One of your rolls was a 1, switching to ${gameData.players[gameData.index]}</p></div>`;
 
-            setTimeout(setUpTurn, 5000);
+            setTimeout(setUpTurn, 4000);
         }
 
 
@@ -92,12 +109,18 @@ console.log("reading js");
             document.getElementById('rollagain').addEventListener('click', function(){
                 //setUpTurn();
                 throwDice();
+
+                //sound plays
+                dingSound.play();
             });
 
             document.getElementById('pass').addEventListener('click', function(){
                 //switch players
                 gameData.index ? (gameData.index = 0) : (gameData.index=1);
                 setUpTurn();
+
+                //sound plays
+                 beepSound.play();
             });
 
             //check if player won
@@ -111,12 +134,18 @@ console.log("reading js");
         if (gameData.score[gameData.index] > gameData.gameEnd) {
             score.innerHTML = `<div id="win"><h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2></div>`;
 
+             //sound plays
+             winSound.play();
+
             actionArea.innerHTML="";
             document.getElementById('quit').innerHTML = "NEW GAME";
+            game.innerHTML = '<div id="gameover"><p>GAME OVER<p></div>';
+
         }
 
         else {
             showCurrentScore();
+
         };
     };
 
@@ -127,7 +156,7 @@ console.log("reading js");
 
     };
 
-    
+   
 
    
 
