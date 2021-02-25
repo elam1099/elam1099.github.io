@@ -14,7 +14,6 @@ console.log("reading js");
     
    //sounds
     const dingSound = new Audio('media/ding.wav');
-    const beepSound = new Audio('media/beep.wav');
     const winSound = new Audio('media/win.wav');
     const diceSound = new Audio('media/diceroll.m4a');
 
@@ -41,8 +40,6 @@ console.log("reading js");
 
             location.reload();
 
-            //sound plays
-            beepSound.play();
             
         });
 
@@ -119,8 +116,7 @@ console.log("reading js");
                 gameData.index ? (gameData.index = 0) : (gameData.index=1);
                 setUpTurn();
 
-                //sound plays
-                 beepSound.play();
+        
             });
 
             //check if player won
