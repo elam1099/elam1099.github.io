@@ -184,7 +184,7 @@ section img {
     position: absolute;
     z-index: 1;
     left: 30%;
-    top: 490%;
+    top: 530%;
 }
 
 @keyframes rotation {
@@ -248,16 +248,6 @@ h2 {
     color: white;
 }
 
-
-/* 
-.gm h2 {
-    position: absolute;
-    top: 120px;
-    left: 560px;
-    font-size: 120px;
-    color: white;
-    line-height: .95;
-} */
 
 .gm img {
     width: 20%;
