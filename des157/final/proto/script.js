@@ -3,7 +3,7 @@
     console.log("reading js");
 
      //script for timed text on hero
-    let text = ["beautiful", "powerful", "strong","radient"];
+    let text = ["beautiful", "powerful", "strong","radiant"];
     let counter = 0;
     let textChange = document.getElementById("timetext");
     setInterval(change, 2000);
