@@ -191,7 +191,7 @@ section img {
     position: absolute;
     z-index: 1;
     left: 25%;
-    top: 570%;
+    top: 520%;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -5s);
@@ -297,7 +297,7 @@ h2 {
 .gn p {
     position: absolute;
     left: 200px;
-    top: 700px;
+    top: 600px;
     font-family: "Karla", serif;
     font-size: 24px;
     width: 35%;
