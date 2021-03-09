@@ -190,8 +190,8 @@ section img {
     animation: rotation 5s infinite linear;
     position: absolute;
     z-index: 1;
-    left: 30%;
-    top: 530%;
+    left: 25%;
+    top: 570%;
 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -5s);
