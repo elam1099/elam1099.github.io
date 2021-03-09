@@ -171,20 +171,26 @@ section img {
 
 .headerspin img{
     width: 40%;
-    animation: rotation 10s infinite linear;
+    animation: rotation 5s alternate;
     position: absolute;
     z-index: 1;
     left: 35%;
     top: 150%;
-}
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -5s);
+ }
 
 .headerspin2 img {
     width: 40%;
-    animation: rotation 10s infinite linear;
+    animation: rotation 5s infinite linear;
     position: absolute;
     z-index: 1;
     left: 30%;
-    top: 530%;
+    top: 510%;
+
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -5s);
 }
 
 @keyframes rotation {
@@ -201,16 +207,22 @@ section img {
 .morning.image img {
     background-color: #DCB494;
     box-shadow: #9c6644 5px 5px 5px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-.night.image img, .night2.image img, .night3.image img {
+.night.image img {
     background-color: #355F9A;
     box-shadow: #101e31 5px 5px 5px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-.misc1 img, .misc2 img {
+.misc1 img {
     background-color: #7C9D8B;
     box-shadow: #546d5f 5px 5px 5px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 section {
@@ -299,6 +311,7 @@ h2 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
+    grid-row-gap: 30px;
     justify-content: space-between;
     width: 50%;
     margin: auto;
@@ -309,26 +322,33 @@ h2 {
     margin-bottom: 60px;
 }
 
-.morning p, .night p, .misc1 p {
+.morningp, .nightp, .misc1p {
     font-family: 'Karla', serif;
     font-size: 16px;
     padding: 20px;
     background-color: white;
     border-radius: 30px;
-    height: 60%;
+    height: 70%;
+
+    padding-bottom: 20px;
+   
 }
 
+.title {
+    font-family: 'RecoletaSemi', serif;
+    font-size: 14px;
+}
 
-.morning p {
+.morningp {
     box-shadow:  #9c6644 3px 3px, 6px 6px #b08968, 10px 10px #ddb892;
 }
 
-.night p {
+.nightp {
     box-shadow:  #89c2d9 3px 3px, 6px 6px #2a6f97, 10px 10px #014f86;
 }
 
 
-.misc1 p {
+.misc1p {
     box-shadow:  #a1cda8 3px 3px, 6px 6px #79b791, 10px 10px #7ba681;
 }
 
@@ -345,8 +365,7 @@ h2 {
 /* hover animations for products
  */
  #vitac:hover, #gbr:hover, #missha:hover, #kale:hover, #toner:hover,#snail:hover,
- #blume:hover,#tret:hover,#oil:hover,  #innisfree:hover, #patch:hover{
-    transform: scale(1.1);
+ #blume:hover,#tret:hover,#oil:hover,  #innisfree:hover, #cetaphil:hover, #patch:hover{
     transition: .6s;
     animation: rotation 10s infinite linear;
     background: none;
@@ -409,3 +428,104 @@ footer a:visited{
 footer a:link{
     text-decoration: none;
   }
+
+/*buttons to buy*/
+
+.link button{
+    position:relative;
+    left: 0%;
+    margin: auto;
+
+    padding: 2px 5px 2px 5px;
+    border: 10px solid transparent;
+    background-color: #ddb892;
+    border-radius: 22px;
+    cursor: pointer;
+    font-family: 'RecoletaMedium';
+    margin-bottom: 10px;
+
+}
+
+
+
+.link2 button{
+    position:relative;
+    left: 0%;
+    margin: auto;
+
+    padding: 2px 5px 2px 5px;
+    border: 10px solid transparent;
+    background-color: #014f86;
+    border-radius: 22px;
+    cursor: pointer;
+    font-family: 'RecoletaMedium';
+    margin-bottom: 10px;
+
+}
+
+.link3 button{
+    position:relative;
+    left: 0%;
+    margin: auto;
+
+    padding: 2px 5px 2px 5px;
+    border: 10px solid transparent;
+    background-color: #7ba681;
+    border-radius: 22px;
+    cursor: pointer;
+    font-family: 'RecoletaMedium';
+    margin-bottom: 10px;
+
+}
+
+.link button:hover {
+    transition: .5s ease;
+    background-color: #7c5040;
+    box-shadow: #ddbea9 4px 3px;
+    color: white;
+    font-family: 'RecoletaMedium';
+}
+
+.link2 button:hover {
+    transition: .5s ease;
+    background-color: #014f86;
+    box-shadow: #89c2d9 4px 3px;
+    color: white;
+    font-family: 'RecoletaMedium';
+}
+
+.link3 button:hover {
+    transition: .5s ease;
+    background-color: #7ba681;
+    box-shadow: #a1cda8 4px 3px;
+    color: white;
+    font-family: 'RecoletaMedium';
+}
+
+.link button a, .link2 button a, .link3 button a {
+    text-decoration: none;
+    color: white;
+}
+
+.link button a:visited, .link button a:visited, .link3 button a:visited {
+    color: white;
+}
+
+
+
+.buy {
+	position: absolute;
+    z-index: 2;
+    top: 10px;
+    display: none;
+   
+}
+.link:hover .buy, .link2:hover .buy, .link3:hover .buy{ 
+    display:block;
+    
+}
+
+
+
+
+

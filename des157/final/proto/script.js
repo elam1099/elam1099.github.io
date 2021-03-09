@@ -3,7 +3,7 @@
     console.log("reading js");
 
      //script for timed text on hero
-    let text = ["beautiful", "powerful", "strong","radiant"];
+    let text = ["beautiful.", "powerful.", "strong.","radiant."];
     let counter = 0;
     let textChange = document.getElementById("timetext");
     setInterval(change, 2000);
@@ -71,8 +71,8 @@
 
         switch(true) {
             case page < 2700: body.className="light"; break; //bg color is beige
-            case page < 5700: body.className="dark"; break; //bg color is dark navy
-            case page < 5800: body.className="green"; break; //bg color is sage green
+            case page < 6000: body.className="dark"; break; //bg color is dark navy
+            case page < 6100: body.className="green"; break; //bg color is sage green
 
             default: body.className="green";
         }
@@ -110,20 +110,23 @@
     let image19 = document.getElementById("cetaphil");
     let image22 = document.getElementById("patch");
 
+
     //image on hover
     image2.addEventListener('mouseover', function(){
-    image2.src = "images/selfcare.svg";
-
+    image2.src = "images/quote1.svg";
 
     })
     //image default
     image2.addEventListener('mouseout', function(){
-        image2.src =  "images/vitac.png";
+    image2.src =  "images/vitac.png";
+
     }) 
     
+  
+
      //image on hover
     image3.addEventListener('mouseover', function(){
-    image3.src = "images/selfcare.svg";
+    image3.src = "images/quote2.svg";
     })
     //image default
     image3.addEventListener('mouseout', function(){
@@ -133,7 +136,7 @@
 
     //image on hover
     image4.addEventListener('mouseover', function(){
-    image4.src = "images/selfcare.svg";
+    image4.src = "images/quote3.svg";
     })
     //image default
     image4.addEventListener('mouseout', function(){
@@ -142,7 +145,7 @@
     
      //image on hover
     image5.addEventListener('mouseover', function(){
-    image5.src = "images/selfcare.svg";
+    image5.src = "images/quote4.svg";
         })
     //image default
     image5.addEventListener('mouseout', function(){
@@ -151,7 +154,7 @@
 
      //image on hover
      image7.addEventListener('mouseover', function(){
-        image7.src = "images/selfcare.svg";
+        image7.src = "images/quote5.svg";
        })
     //image default
     image7.addEventListener('mouseout', function(){
@@ -160,7 +163,7 @@
         
     //image on hover
     image9.addEventListener('mouseover', function(){
-    image9.src = "images/selfcare.svg";
+    image9.src = "images/quote6.svg";
          })
     //image default
     image9.addEventListener('mouseout', function(){
@@ -169,7 +172,7 @@
 
     //image on hover
     image11.addEventListener('mouseover', function(){
-    image11.src = "images/selfcare.svg";
+    image11.src = "images/quote7.svg";
          })
     //image default
     image11.addEventListener('mouseout', function(){
@@ -179,7 +182,7 @@
 
     //image on hover
     image13.addEventListener('mouseover', function(){
-    image13.src = "images/selfcare.svg";
+    image13.src = "images/quote8.svg";
          })
     //image default
     image13.addEventListener('mouseout', function(){
@@ -189,7 +192,7 @@
 
     //image on hover
     image15.addEventListener('mouseover', function(){
-    image15.src = "images/selfcare.svg";
+    image15.src = "images/quote9.svg";
          })
     //image default
     image15.addEventListener('mouseout', function(){
@@ -199,7 +202,7 @@
 
     //image on hover
     image17.addEventListener('mouseover', function(){
-    image17.src = "images/selfcare.svg";
+    image17.src = "images/quote10.svg";
          })
     //image default
     image17.addEventListener('mouseout', function(){
@@ -209,7 +212,7 @@
 
     //image on hover
     image19.addEventListener('mouseover', function(){
-    image19.src = "images/selfcare.svg";
+    image19.src = "images/quote11.svg";
          })
     //image default
     image19.addEventListener('mouseout', function(){
@@ -219,7 +222,7 @@
 
     //image on hover
     image22.addEventListener('mouseover', function(){
-    image22.src = "images/selfcare.svg";
+    image22.src = "images/quote12.svg";
          })
     //image default
     image22.addEventListener('mouseout', function(){
@@ -239,5 +242,11 @@
         setTimeout(typeWriter, speed);
         }
     } */
+
+    window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+      }); 
+
+  
 
 }());
