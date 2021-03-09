@@ -2,8 +2,6 @@
     'use strict';
     console.log("reading js");
 
-    alert("Hello! Welcome to my site. Here are a few tasks I would like you to do: 1. Can you find where to purchase the product? 2. Hover over an image and describe what you see. 3. ");
-
      //script for timed text on hero
     let text = ["beautiful.", "powerful.", "strong.","radiant."];
     let counter = 0;
