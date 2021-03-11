@@ -301,7 +301,7 @@ h2 {
 }
 
 
-#ptitle {
+.ptitle {
     font-family: RecoletaSemi, serif;
     color: white;
     font-size: 28px;
@@ -332,7 +332,7 @@ h2 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
-    grid-row-gap: 30px;
+    grid-row-gap: 50px;
     justify-content: space-between;
     width: 50%;
     margin: auto;
@@ -351,8 +351,13 @@ h2 {
     border-radius: 30px;
     height: 70%;
 
-    padding-bottom: 20px;
+    padding-bottom: 30px;
    
+}
+
+
+.morningp p, .nightp p, .misc1p p {
+    margin-bottom: 10px;
 }
 
 .title {
@@ -506,6 +511,10 @@ h2 {
 
 /*buttons to buy*/
 
+button.buy {
+    margin-bottom: 80px;
+}
+
 .link button{
     position:relative;
     left: 0%;
@@ -612,6 +621,7 @@ h2 {
     background-color: #7ba681;
     transition: .5s ease;
     animation: colors 3s infinite;
+    cursor: pointer;
 
 }
 
