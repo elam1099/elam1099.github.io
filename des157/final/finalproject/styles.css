@@ -257,7 +257,6 @@ h1 {
 
 h2 {
     font-family: "RecoletaMedium", serif;
-    font-weight: Medium;  
     font-size: 36px;
     margin-left: 140px;
     color: white;
@@ -494,7 +493,7 @@ h2 {
     animation: rotation 10s infinite linear;
     background: none;
     box-shadow: none;
-    overflow:none;
+    
 
 }
 
